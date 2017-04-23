@@ -88,7 +88,49 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
+		{
+			title:	'Logan',
+			iscore:	8.4,
+			rating:	'R',
+			runtime:	141,
+			released:	new Date('2017', '3', '3'),
+			country:	'USA',
+			posters:	['img/logan1.jpg','img/logan2.jpg','img/logan3.jpg'],
+			imdb:		'http://www.imdb.com/title/tt3315342',
+			website:	'https://www.facebook.com/Logan-2017-278768432290327/',
+			likes:	810,
+			dislikes:	100,
+			posterindex: 0
+		},
+		{
+			title:	'Inside Out',
+			iscore:	8.2,
+			rating:	'PG',
+			runtime:	95,
+			released:	new Date('2015', '6', '19'),
+			country:	'USA',
+			posters:	['img/insideout1.jpg','img/insideout2.jpg','img/insideout3.jpg'],
+			imdb:		'http://www.imdb.com/title/tt2096673',
+			website:	'https://www.facebook.com/PixarInsideOut',
+			likes:	799,
+			dislikes:	99,
+			posterindex: 0
+		},
+		{
+			title:	'Moana',
+			iscore:	7.7,
+			rating:	'PG',
+			runtime:	107,
+			released:	new Date('2016', '11', '23'),
+			country:	'USA',
+			posters:	['img/moana1.jpg','img/moana2.jpg','img/moana3.jpg'],
+			imdb:		'http://www.imdb.com/title/tt3521164',
+			website:	'https://www.facebook.com/disneymoana/',
+			likes:	788,
+			dislikes:	88,
+			posterindex: 0
+		}
 
 
   ];
