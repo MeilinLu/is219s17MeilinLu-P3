@@ -35,32 +35,30 @@
       <div class="container">
 
         <div class="col-md-6">
-            <div class="thumbnail">
+					<div class="thumbnail">
 
-					<img class="poster" />
-					<div class="imageInfo">%posterindex%</div>
+						<img class="poster">
+						<div class="imageInfo">{{movies[$index].posterindex}}</div>
+						<p class="title">{{movies[$index].title}} ({{movies[$index].country}})</p>
+						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movies[$index].iscore}} </p>
+						<p class="runtime">Runtime: {{movies[$index].runtime}}</p>
+						<p class="released">Released: {{movies[$index].released}} | Rated: {{movies[$index].rating}}</p>
+						<p class="websites">Websites: <a>{{movies[$index].imdb}}</a> | <a>{{movies[$index].website}}</a></p>
+						<div class="social">
+							<p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[$index].likes}}</p>
+							<p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[$index].dislikes}}</p>
+						</div>
 
-					<p class="title">%title% (%country%)</p>
-					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> %iscore% </p>
-					<p class="runtime">Runtime: %runtime%</p>
-					<p class="released">Released: %released% | Rated: %rating%</p>
-					<p class="websites">Websites: <a>%imdb%</a> | <a>%website%</a></p>
-
-		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> %like%</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> %dislike%</p>
-		            </div>
-            </div>
+					</div>
         </div>
-
       </div>
     </div>
 
     <div class="footer">
       <div class="container">
-		<a id="github" class="btn btn-lg btn-warning">
-			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> %owner% %github%
-  		</a>
+				<a id="github" class="btn btn-lg btn-warning">
+					<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}} {{github}}
+				</a>
       </div>
     </div>
 
